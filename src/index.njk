@@ -6,6 +6,23 @@ csspath: ./css/
 
 <h1>{{ title }}</h1>
 <ul>
-	<li><a href="./goods">goods</a></li>
+	<li><a href="../index.html">goods</a></li>
 	<li><a href="./about">about</a></li>
+</ul>
+
+<ul>
+	{% for good in goods %}
+	<li>
+		<a href="../goods/{{ good.url }}">
+			<img src="../goods/{{good.itemphotos[0]}}" alt="">
+			<br> {{ good.name }}
+			<br> {{ good.price }}円
+			<br> 
+				{% if good.state %}
+					soleout
+				{% else %}
+				{% endif %}
+			<br>
+		</a></li>
+	{% endfor %}
 </ul>

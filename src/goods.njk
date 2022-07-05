@@ -3,10 +3,12 @@ pagination:
   data: goods
   size: 1
   alias: good
-permalink: 'goods/{{ good.name | slugify }}/'
+permalink: 'goods/{{ good.url | slugify }}/'
 layout: layout.njk
 csspath: ../../css/
 ---
+
+
 {{ pagination.items | log }}
 
 <ul>
