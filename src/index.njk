@@ -8,12 +8,12 @@ aboutpath:about
 <main>
     <h3>items</h3>
 	<section>
-        {% for item in items %}
+        {% for sell in sells %}
 		<div>
-            <a href="../items/{{item.name}}">
+            <a href="../sells/{{sell.name}}">
 			    <img src="" alt="">
-			    <h5>{{item.name}}</h5>
-			    <p>{{item.text}}</p>
+			    <h5>{{sell.name}}</h5>
+			    <p>{{sell.text}}</p>
             </a>
 		</div>
     	{% endfor %}

@@ -1,9 +1,9 @@
 ---
 pagination:
-  data: items
+  data: sells
   size: 1
-  alias:items
-permalink: 'items/{{ item.name | slugify }}/'
+  alias:sells
+permalink: 'sells/{{ sells.name | slugify }}/'
 layout: layout.njk
 csspath: ../../css/
 ---
@@ -22,7 +22,7 @@ csspath: ../../css/
         <img src="" alt="">
       </div>
       <section>
-        <h3>{{pageination.items.name}}</h3>
+        <h3>{{pageination.items[0].name}}</h3>
         <p></p>
         <p></p>
         <ul>
