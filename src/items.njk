@@ -2,12 +2,14 @@
 pagination:
   data: items
   size: 1
+  alias:items
+permalink: 'items/{{ item.name | slugify }}/'
 layout: layout.njk
 csspath: ../../css/
 ---
 
 
-<main>
+{{ pagination.items | log }}
   <article>
     <section>
       <div>
@@ -20,7 +22,7 @@ csspath: ../../css/
         <img src="" alt="">
       </div>
       <section>
-        <h3></h3>
+        <h3>{{pageination.items[0].name}}</h3>
         <p></p>
         <p></p>
         <ul>
@@ -39,4 +41,3 @@ csspath: ../../css/
       <small></small>
     </div>
   </article>
-</main>

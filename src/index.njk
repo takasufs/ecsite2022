@@ -1,46 +1,21 @@
 ---
-title: Topページ
+title: Top
 layout: layout.njk
 csspath: ./css/
+aboutpath:about
 ---
 
 <main>
-    <h3>item</h3>
+    <h3>items</h3>
 	<section>
+        {% for item in items %}
 		<div>
-			<img src="" alt="">
-			<h5></h5>
-			<p></p>
+            <a href="../items/{{item.name}}">
+			    <img src="" alt="">
+			    <h5>{{item.name}}</h5>
+			    <p>{{item.text}}</p>
+            </a>
 		</div>
-    	
-        <div>
-			<img src="" alt="">
-			<h5></h5>
-			<p></p>
-		</div>
-		
-        <div>
-			<img src="" alt="">
-			<h5></h5>
-			<p></p>
-		</div>
-
-		<div>
-			<img src="" alt="">
-			<h5></h5>
-			<p></p>
-		</div>
-
-		<div>
-			<img src="" alt="">
-			<h5></h5>
-			<p></p>
-		</div>
-
-		<div>
-			<img src="" alt="">
-			<h5></h5>
-			<p></p>
-		</div>
+    	{% endfor %}
 	</section>
 </main>
