@@ -1,21 +1,11 @@
 ---
-title: Top
+title: Topページ
 layout: layout.njk
 csspath: ./css/
-aboutpath:about
 ---
 
-<main>
-    <h3>items</h3>
-	<section>
-        {% for sell in sells %}
-		<div>
-            <a href="../sells/{{sell.name}}">
-			    <img src="" alt="">
-			    <h5>{{sell.name}}</h5>
-			    <p>{{sell.text}}</p>
-            </a>
-		</div>
-    	{% endfor %}
-	</section>
-</main>
+<h1>{{ title }}</h1>
+<ul>
+	<li><a href="./goods">goods</a></li>
+	<li><a href="./about">about</a></li>
+</ul>
