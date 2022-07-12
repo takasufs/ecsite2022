@@ -14,8 +14,13 @@ img {
 
 .flex {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.flex-li {
+    width: 30%;
 }
 
 .logo {
