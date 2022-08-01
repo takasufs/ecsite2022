@@ -7,7 +7,7 @@ permalink: 'goods/{{ good.url | slugify }}/'
 layout: layout.njk
 csspath: ../../css/
 imgpath: ../../img/
-
+htmlpath: ../../
 
 ---
 
@@ -16,22 +16,26 @@ imgpath: ../../img/
 
 <div class="flex goods_flex">
   <div class="flex w-48">
-    <img id="goodsimg" src="../../img/{{good.itemphotos[0]}}" alt="">
-    <ul class="flex">
-      <li class="flex-li"><img src="../../img/{{good.itemphotos[0]}}" alt=""></li>
-      <li class="flex-li"><img src="../../img/{{good.itemphotos[1]}}" alt=""></li>
+    <img id="goodimg" src="../../img/{{good.itemphotos[0]}}" alt="">
+    <ul class="flex nowarp">
+      <li class="flex-li"><img id="1" src="../../img/{{good.itemphotos[0]}}" alt=""></li>
+      <li class="flex-li"><img id="2" src="../../img/{{good.itemphotos[1]}}" alt=""></li>
+      <li class="flex-li"><img id="3" src="../../img/{{good.itemphotos[2]}}" alt=""></li>
     </ul>
   </div>
   <div class="w-48">
     <ul>
-      <li>{{ pagination.items[0].name }}</li>
+      <li>商品名：{{ pagination.items[0].name }}</li>
       <li>{{ pagination.items[0].text }}</li>
       <li>{{ pagination.items[0].color }}色</li>
-      <li>{{ pagination.items[0].id }}</li>
-      <li>{{ pagination.items[0].price }}円</li>
-      <li>{{ pagination.items[0].maker }}</li>
+      <li id="id">商品ID:{{ pagination.items[0].id }}</li>
+      <li>値段：{{ pagination.items[0].price }}円</li>
+      <li>メーカー：{{ pagination.items[0].maker }}</li>
     </ul>
 
-    <input class="input_num" type="number" min="0" max="10">
+    <input value="" class="input_num" id="{{good.url}}_num" type="number" min="0" max="10">
+    <button id="{{good.url}}-btn" class="num-btn">カートに入れる</button>
   </div>
+  <script src="../../js/num.js"></script>
 </div>
+		<script src="../../js/main.js"></script>
