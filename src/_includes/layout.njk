@@ -1,5 +1,5 @@
 ---
-title: レイアウトに指定したタイトル
+title: noF
 ---
 
 <!DOCTYPE html>
@@ -12,6 +12,16 @@ title: レイアウトに指定したタイトル
 		<link rel="stylesheet" href="{{ csspath }}/style.css" />
 	</head>
 	<body>
+		<header class="flex">
+			<h1><a href="../index.html"><img src="./img/logo.jpg" alt="" class="logo"></a></h1>
+			<h2><a href="../cart/index.html"><img src="./img/cart.svg" alt="" class="cart"></a></h2>
+		</header>
+		<main>
 		{{ content | safe }}
+		</main>
+
+		<footer class="footer">
+			copyrigth noF 2022
+		</footer>
 	</body>
 </html>

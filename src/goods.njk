@@ -11,17 +11,6 @@ csspath: ../../css/
 
 {{ pagination.items | log }}
 
-<header class="flex">
-<h1><a href="../../index.html"><img src="../../img/logo.jpg" alt="" class="logo"></a></h1>
-<h2><a href="../../cart/index.html"><img src="../../img/cart.svg" alt="" class="cart"></a></h2>
-</header>
-
-<img src="../../img/logo.jpg" alt="">
-
-<ul class="flex">	
-  <li><img src="../../img/{{ pagination.items[0].itemphotos[] }}" alt=""></li>
-</ul>
-
 <ul>
 	<li>{{ pagination.items[0].name }}</li>
 	<li>{{ pagination.items[0].text }}</li>
