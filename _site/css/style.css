@@ -1,14 +1,13 @@
 @charset "utf-8";
 
 body {
-    background-color: #eee;
     color: #333;
+    background-color: #eee;
     font-size: 16px;
     line-height: 1.5;
 }
 
-header,
-main {
+.inner {
     max-width: 1250px;
     width: 90%;
     margin: 0 auto;
@@ -24,8 +23,14 @@ ul {
     list-style: none;
 }
 
+a {
+    color: #333;
+    text-decoration: none;
+}
+
 header {
-    margin-top: 10px;
+    background-color: #fff;
+    padding: 15px 0;
 }
 
 h3 {
@@ -39,8 +44,8 @@ h3 {
     flex-wrap: wrap;
 }
 
-.flex-li {
-    width: 30%;
+.goods_flex {
+    align-items: flex-start;
 }
 
 .logo {
@@ -48,9 +53,32 @@ h3 {
     height: auto;
 }
 
+.good_all {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.flex-li {
+    width: 30%;
+}
+
+
+.soleout {
+    text-align: right;
+}
+
+.w-48 {
+    width: 48%;
+}
+
 .cart {
     width: 96px;
     height: 40px;
+}
+
+.input_num {
+    background-color: #fff;
+    width: 50%;
 }
 
 footer {

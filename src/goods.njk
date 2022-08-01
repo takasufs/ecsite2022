@@ -6,12 +6,32 @@ pagination:
 permalink: 'goods/{{ good.url | slugify }}/'
 layout: layout.njk
 csspath: ../../css/
+imgpath: ../../img/
+
+
 ---
 
 
 {{ pagination.items | log }}
 
-<ul>
-	<li>{{ pagination.items[0].name }}</li>
-	<li>{{ pagination.items[0].text }}</li>
-</ul>
+<div class="flex goods_flex">
+  <div class="flex w-48">
+    <img id="goodsimg" src="../../img/{{good.itemphotos[0]}}" alt="">
+    <ul class="flex">
+      <li class="flex-li"><img src="../../img/{{good.itemphotos[0]}}" alt=""></li>
+      <li class="flex-li"><img src="../../img/{{good.itemphotos[1]}}" alt=""></li>
+    </ul>
+  </div>
+  <div class="w-48">
+    <ul>
+      <li>{{ pagination.items[0].name }}</li>
+      <li>{{ pagination.items[0].text }}</li>
+      <li>{{ pagination.items[0].color }}色</li>
+      <li>{{ pagination.items[0].id }}</li>
+      <li>{{ pagination.items[0].price }}円</li>
+      <li>{{ pagination.items[0].maker }}</li>
+    </ul>
+
+    <input class="input_num" type="number" min="0" max="10">
+  </div>
+</div>
