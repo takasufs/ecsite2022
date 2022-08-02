@@ -6,12 +6,13 @@ htmlpath: ..
 ---
 
     {% for item in goods %}        
-    <ul class="flex">
+    <ul class="flex cartul">
         <p>{{ item.name }}</p>
+        <p>{{ item.id }}</p>
         <p id="{{good.url}}_buy">個</p>
     </ul>
     {% endfor %}
 
-    <h4 style="text-align:center;" class="num-btn">購入</h4>
+    <h4 style="text-align:center; margin-bottom: 40px;" class="num-btn">購入</h4>
 
 <script src="../js/num.js"></script>

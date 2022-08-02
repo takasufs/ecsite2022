@@ -1,17 +1,18 @@
 # ecsite2022
 
-<!-- 初期データは削除します。 -->
 
 2022 年度 Web デザイン学科 WS1「JavaScript 演習」課題 SSG で EC サイト
 
 ## 完成品
 
-<!-- 完成後、ここにURLを貼ってください。-->
 https://takasufs.org/_site/
 
 ## Features
 
 <!-- セールスポイントや差別化などを説明する。-->
+サイト名：MyShop
+2022 年度 Web デザイン学科 WS1「JavaScript 演習」課題 SSG での EC サイト
+未完成
 
 ## Requirement
 

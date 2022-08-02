@@ -113,6 +113,10 @@ h3 {
     background-color: tomato;
 }
 
+.cartul {
+    margin: 10px 0;
+}
+
 footer {
     width: 100%;
     text-align: center;

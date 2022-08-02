@@ -1,8 +1,9 @@
-let red = document.getElementById("red");
+let redtext = document.getElementById("red").innerHTML;
 let classred = document.querySelector(".red");
 
-let redtext = "";
 window.localStorage.setItem('rednum', redtext);
+
+
 
 
 function chg() {
@@ -15,20 +16,17 @@ function chg() {
     }
 }
 
-function rednum() {
-    red.innerHTML = window.localStorage.setItem('rednum');
-}
 
 
 let id = document.getElementById("id");
+
 let num1 = document.getElementById("saihu_num");
 let buy1 = document.getElementById("saihu_buy");
 let btn1 = document.getElementById("saihu-btn");
 if (id.innerText === "商品ID:44401")
 {
     function saihu() {
-        red.innerHTML = num1.value;
-        rednum();
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num1.value));
         chg();
     }
 }
@@ -40,7 +38,7 @@ let btn2 = document.getElementById("iphone-btn");
 if (id.innerText === "商品ID:44402")
 {
     function iphone() {
-        red.innerHTML = num2.value;
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num2.value));
         chg();
     }
 }
@@ -51,7 +49,7 @@ let btn3 = document.getElementById("gum-btn");
 if (id.innerText === "商品ID:44403")
 {
     function gum() {
-        red.innerHTML = num3.value;
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num3.value));
         chg();
     }
 }
@@ -62,7 +60,7 @@ let btn4 = document.getElementById("eye-btn");
 if (id.innerText === "商品ID:44404")
 {
     function eye() {
-        red.innerHTML = num4.value;
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num3.value));
         chg();
     }
 }
@@ -73,7 +71,7 @@ let btn5 = document.getElementById("syoudoku-btn");
 if (id.innerText === "商品ID:44405")
 {
     function syoudoku() {
-        red.innerHTML = num5.value;
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num5.value));
         chg();
     }
 }
@@ -84,7 +82,7 @@ let btn6 = document.getElementById("stick-btn");
 if (id.innerText === "商品ID:44406")
 {
     function stick() {
-        red.innerHTML = num6.value;
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num6.value));
         chg();
     }
 }
@@ -95,7 +93,7 @@ let btn7 = document.getElementById("bottle-btn");
 if (id.innerText === "商品ID:44407")
 {
     function bottle() {
-        red.innerHTML = num7.value;
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num7.value));
         chg();
     }
 }
@@ -107,7 +105,7 @@ let btn8 = document.getElementById("doraiba-btn");
 if (id.innerText === "商品ID:44408")
 {
     function saidoraiba() {
-        red.innerHTML = num8.value;
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num8.value));
         chg();
     }
 }
@@ -119,7 +117,7 @@ let btn9 = document.getElementById("huusennki-btn");
 if (id.innerText === "商品ID:44409")
 {
     function huusennki() {
-        red.innerHTML = num9.value;
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num9.value));
         chg();
     }
 }
@@ -130,7 +128,7 @@ let btn10 = document.getElementById("iyahon-btn");
 if (id.innerText === "商品ID:44410")
 {
     function iyahon() {
-        red.innerHTML = num10.value;
+        redtext = (Number(window.localStorage.getItem('rednum')) + Number(num10.value));
         chg();
     }
 }
