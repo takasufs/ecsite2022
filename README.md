@@ -7,7 +7,7 @@
 ## 完成品
 
 <!-- 完成後、ここにURLを貼ってください。-->
-https://takasufs.org/_site/index.html
+https://takasufs.org/_site/
 
 ## Features
 
