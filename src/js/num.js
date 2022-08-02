@@ -5,7 +5,6 @@ let redtext = "";
 window.localStorage.setItem('rednum', redtext);
 
 
-
 function chg() {
     if (red.innerText <= 0)
     {
@@ -17,7 +16,7 @@ function chg() {
 }
 
 function rednum() {
-    red.innerHTML += Number(window.localStorage.getItem('rednum'));
+    red.innerHTML = window.localStorage.setItem('rednum');
 }
 
 
@@ -28,9 +27,7 @@ let btn1 = document.getElementById("saihu-btn");
 if (id.innerText === "商品ID:44401")
 {
     function saihu() {
-        allnum += num1.value;
         red.innerHTML = num1.value;
-        Number(window.localStorage.getItem('rednum')) += num1.value;
         rednum();
         chg();
     }
@@ -43,7 +40,6 @@ let btn2 = document.getElementById("iphone-btn");
 if (id.innerText === "商品ID:44402")
 {
     function iphone() {
-        allnum += num2.value;
         red.innerHTML = num2.value;
         chg();
     }
@@ -55,7 +51,6 @@ let btn3 = document.getElementById("gum-btn");
 if (id.innerText === "商品ID:44403")
 {
     function gum() {
-        allnum += num3.value;
         red.innerHTML = num3.value;
         chg();
     }
@@ -67,7 +62,6 @@ let btn4 = document.getElementById("eye-btn");
 if (id.innerText === "商品ID:44404")
 {
     function eye() {
-        allnum += num4.value;
         red.innerHTML = num4.value;
         chg();
     }
@@ -79,7 +73,6 @@ let btn5 = document.getElementById("syoudoku-btn");
 if (id.innerText === "商品ID:44405")
 {
     function syoudoku() {
-        allnum += num5.value;
         red.innerHTML = num5.value;
         chg();
     }
@@ -91,7 +84,6 @@ let btn6 = document.getElementById("stick-btn");
 if (id.innerText === "商品ID:44406")
 {
     function stick() {
-        allnum += num6.value;
         red.innerHTML = num6.value;
         chg();
     }
@@ -103,7 +95,6 @@ let btn7 = document.getElementById("bottle-btn");
 if (id.innerText === "商品ID:44407")
 {
     function bottle() {
-        allnum += num7.value;
         red.innerHTML = num7.value;
         chg();
     }
@@ -116,7 +107,6 @@ let btn8 = document.getElementById("doraiba-btn");
 if (id.innerText === "商品ID:44408")
 {
     function saidoraiba() {
-        allnum += num8.value;
         red.innerHTML = num8.value;
         chg();
     }
@@ -129,7 +119,6 @@ let btn9 = document.getElementById("huusennki-btn");
 if (id.innerText === "商品ID:44409")
 {
     function huusennki() {
-        allnum += num9.value;
         red.innerHTML = num9.value;
         chg();
     }
@@ -141,7 +130,6 @@ let btn10 = document.getElementById("iyahon-btn");
 if (id.innerText === "商品ID:44410")
 {
     function iyahon() {
-        allnum += num10.value;
         red.innerHTML = num10.value;
         chg();
     }
