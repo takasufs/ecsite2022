@@ -1,11 +1,17 @@
 ---
-title: cart
 layout: layout.njk
 csspath: ../../css/
 imgpath: ../../img/
-
+htmlpath: ../
 ---
 
-<ul class="flex">
-    <li id="cartlist"></li>
-</ul>
+    {% for item in goods %}        
+    <ul class="flex">
+        <p>{{ item.name }}</p>
+        <p id="{{good.url}}_buy">個</p>
+    </ul>
+    {% endfor %}
+
+    <h4>購入</h4>
+
+<script src="../js/num.js"></script>

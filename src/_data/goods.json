@@ -1,30 +1,152 @@
 [
     {
         "itemphotos": [
-            "goods1-1.jpg",
-            "goods2-1.svg"
+            "good1_1.jpg",
+            "good1_2.jpg",
+            "good1_3.jpg"
         ],
-        "name": "うまい棒サラミ味",
-        "price": 12,
+        "name": "財布",
+        "price": 1000,
         "state": true,
-        "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
-        "id": 27002,
-        "colors": "黄色",
-        "maker": "（株）やおきん",
-        "url": "umaibo"
+        "text": "この財布は折り畳み財布のように長財布の半分ぐらいの大きさなんですが収納量は少なそうに見えて結構大きいです。あと小銭が結構出しやすい。",
+        "id": 44401,
+        "colors": "黒",
+        "maker": "marie claire",
+        "url": "saihu"
     },
     {
         "itemphotos": [
-            "goods1-1.jpg",
-            "goods2-1.svg"
+            "good2_1.jpg",
+            "good2_2.jpg",
+            "good2_3.jpg"
         ],
-        "name": "カットよっちゃん（よっちゃんイカ）",
-        "price": 50,
+        "name": "iphone SE",
+        "price": 50000,
         "state": false,
-        "text": "世界中から厳選したイカと、日本近海で獲れたタラのすり身を主に使用した魚肉シートを食べやすい一口サイズにカットし、秘伝の調味でさっぱりとした酢味に仕上げました。",
-        "id": "4710158-2",
-        "colors": "赤",
-        "maker": "よっちゃん食品工業（株）",
-        "url": "yochan"
+        "text": "普通のiphone SE",
+        "id": 44402,
+        "colors": "白",
+        "maker": "APPLE",
+        "url": "iphone"
+    },
+    {
+        "itemphotos": [
+            "good3_1.jpg",
+            "good3_2.jpg",
+            "good3_3.jpg"
+        ],
+        "name": "ガム",
+        "price": 800,
+        "state": true,
+        "text": "ライムミント味でおいしいガム",
+        "id": 44403,
+        "colors": "緑",
+        "maker": "LOTTE",
+        "url": "gum"
+    },
+    {
+        "itemphotos": [
+            "good4_1.jpg",
+            "good4_2.jpg",
+            "good4_3.jpg"
+        ],
+        "name": "目薬",
+        "price": 300,
+        "state": true,
+        "text": "爽快度（?）が確か6あり、結構すっきりします。",
+        "id": 44404,
+        "colors": "黄色",
+        "maker": "ロート製薬株式会社",
+        "url": "eye"
+    },
+    {
+        "itemphotos": [
+            "good5_1.jpg",
+            "good5_2.jpg",
+            "good5_3.jpg"
+        ],
+        "name": "消毒液",
+        "price": 200,
+        "state": false,
+        "text": "コロナが流行ってから需要がました物の一つだと思います。",
+        "id": 44405,
+        "colors": "白",
+        "maker": "Biore",
+        "url": "syoudoku"
+    },
+    {
+        "itemphotos": [
+            "good6_1.jpg",
+            "good6_2.jpg",
+            "good6_3.jpg"
+        ],
+        "name": "伸縮棒",
+        "price": 500,
+        "state": false,
+        "text": "コートなどをかけるには結構いいものです。",
+        "id": 44406,
+        "colors": "茶色",
+        "maker": "?",
+        "url": "stick"
+    },
+    {
+        "itemphotos": [
+            "good7_1.jpg",
+            "good7_2.jpg",
+            "good7_3.jpg"
+        ],
+        "name": "水筒",
+        "price": 300,
+        "state": true,
+        "text": "耐熱湯の水筒です。",
+        "id": 44407,
+        "colors": "白",
+        "maker": "THERMOS",
+        "url": "bottle"
+    },
+    {
+        "itemphotos": [
+            "good8_1.jpg",
+            "good8_2.jpg",
+            "good8_3.jpg"
+        ],
+        "name": "六角形ドライバー",
+        "price": 200,
+        "state": true,
+        "text": "たまに必要になって用途が結構ある一個は持っておきたいもの",
+        "id": 44408,
+        "colors": "シルバー",
+        "maker": "?",
+        "url": "doraiba"
+    },
+    {
+        "itemphotos": [
+            "good9_1.jpg",
+            "good9_2.jpg",
+            "good9_3.jpg"
+        ],
+        "name": "手持ち扇風機",
+        "price": 400,
+        "state": true,
+        "text": "夏に場には風がないところは大変な暑さなのでほしいものの一つです。",
+        "id": 44409,
+        "colors": "ピンク",
+        "maker": "?",
+        "url": "huusennki"
+    },
+    {
+        "itemphotos": [
+            "good10_1.jpg",
+            "good10_2.jpg",
+            "good10_3.jpg"
+        ],
+        "name": "イヤホン",
+        "price": 10000,
+        "state": true,
+        "text": "家で使える優先のイヤホン",
+        "id": 44410,
+        "colors": "白と黒",
+        "maker": "7HZ",
+        "url": "iyahon"
     }
 ]

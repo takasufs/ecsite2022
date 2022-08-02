@@ -2,14 +2,14 @@
 title: Topページ
 layout: layout.njk
 csspath: ./css/
-imgpath: ./img/
+imgpath: ./img
 
 ---
 <ul class="good_all flex">
 	{% for good in goods %}
-	<li class="flex-li">
+	<li class="flex-li li">
 		<a href="../goods/{{ good.url }}">
-			<img src="../img/{{good.itemphotos[0]}}" alt="">
+			<img src="./img/{{good.itemphotos[0]}}" alt="">
 			<h3> {{ good.name }} </h3>
 			<p> {{ good.price }}円 </p>
 			<p class="soleout"> 
@@ -22,3 +22,5 @@ imgpath: ./img/
 	</li>
 	{% endfor %}
 </ul>
+
+<script src="./js/num.js"></script>

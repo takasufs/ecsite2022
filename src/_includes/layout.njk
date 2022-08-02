@@ -14,8 +14,15 @@ title: Myshop
 	<body>
 		<header>
 				<div class="inner flex">
-					<h1><a href="../index.html"><img src="{{ imgpath }}/logo.jpg" alt="" class="logo"></a></h1>
-					<h2><a href="../../cart/index.html"><img src="{{ imgpath }}/cart.svg" alt="" class="cart"></a></h2>
+					<h1><a href="{{ htmlpath }}/index.html"><img src="{{ imgpath }}/logo.jpg" alt="" class="logo"></a></h1>
+					<div class="cart">
+						<div class="red">
+							<span id="red">0</span>							
+						</div>
+						<a class="cart_icon" href="../../cart/index.html">
+							<img src="{{ imgpath }}/cart.svg" alt="">
+						</a>
+					</div>				
 				</div>
 		</header>
 		<main>

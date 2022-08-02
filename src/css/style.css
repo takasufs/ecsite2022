@@ -37,6 +37,20 @@ h3 {
     font-size: 21px;
 }
 
+.red {
+    width: 24px;
+    color: #fff;
+    background-color: tomato;
+    position: absolute;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+}
+
+.li {
+    margin: 45px 40px;
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -46,10 +60,16 @@ h3 {
 
 .goods_flex {
     align-items: flex-start;
+    margin: 80px 0;
+}
+
+.nowarp {
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .logo {
-    width: 96px;
+    width: 190px;
     height: auto;
 }
 
@@ -59,7 +79,13 @@ h3 {
 }
 
 .flex-li {
-    width: 30%;
+    width: 175px;
+    height: 175px;
+}
+
+.flex-li img {
+    width: 175px;
+    height: 175px;
 }
 
 
@@ -79,6 +105,12 @@ h3 {
 .input_num {
     background-color: #fff;
     width: 50%;
+}
+
+.num-btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: tomato;
 }
 
 footer {
