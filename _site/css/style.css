@@ -86,6 +86,7 @@ h3 {
 .flex-li img {
     width: 175px;
     height: 175px;
+    object-fit: cover;
 }
 
 
